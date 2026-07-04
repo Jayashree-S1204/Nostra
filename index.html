@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nostra.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="offer" class="bg-slate-900 flex flex-row justify-center items-center w-full gap-1  text-lg ">
+        <p class="text-white">Sign Up and</p>
+        <p class="text-gray-300 font-bold">GET 20% OFF</p>
+        <p class="text-white">for yout first order</p>
+        <p class="text-white ml-2  text-2xl cursor-pointer">x</p>
+    </div>
+
+    <!--desktop menu-->
+    <div  class="flex justify-between items-center bg-white w-full h-20 px-10 sticky top-0 z-50 ">
+        <div class="text-black font-bold text-xl md:text-4xl font-bold text-black">Nostra</div>
+        <ul class="flex flex-row pl-0 m-0 text-gray-500 hidden md:flex">
+            <li> <a href="#home" class="ml-5 hover hover:text-black">Home</a></li>
+            <li><a href="#new-arrivals" class="ml-5 hover hover:text-black">New Arrival</a></li>
+            <li><a href="#most-wanted" class="ml-5 hover hover:text-black">Most Wanted</a></li>
+            <li><a href="collections.html" class="ml-5 hover hover:text-black">Collections</a></li>
+            <li><a href="contact.html" class="ml-5 hover hover:text-black">Contact Us</a></li>
+        </ul>
+        <!-- Menu Icon -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="w-6 h-6 block md:hidden">
+            <path fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+    <!--side navbar-->
+
+    <section id="sidenav" class="bg-white fixed z-50 top-0 transition-all duration-1000 "
+        style="width:50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <ul class="flex flex-col gap-10 pl-0 m-0 text-gray-500  md:flex text-lg ">
+            <li> <a href="#home" class="ml-5 hover hover:text-black">Home</a></li>
+            <li><a href="#new-arrivals" class="ml-5 hover hover:text-black">New Arrival</a></li>
+            <li><a href="#most-wanted" class="ml-5 hover hover:text-black">Most Wanted</a></li>
+            <li><a href="collections.html" class="ml-5 hover hover:text-black">Collections</a></li>
+            <li><a href="contact.html" class="ml-5 hover hover:text-black">Contact Us</a></li>
+        </ul>
+
+    </section>
+    <div class="px-10 scroll-mt-0 "id="home">
+        <div class="carousel-container  ">
+            <!--image slider-->
+            <div class="slides-wrapper lg:bg-bottom-20">
+                <div class="slide active">
+                    <img src="images/image3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="images/image2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="images/image1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="images/image4.jpg" alt="">
+                </div>
+
+
+                <!--overlay content-->
+                <div class="static-content">
+                    <h1>Level Up your style with our</h1>
+                    <h2>Summer Colletions</h2>
+                    <a href="#" class=shop-btn>Shop Now</a>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+                <button class="arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <!--brands-->
+        <div class="flex flex-col mt-10">
+            <div class="font-bold text-xl">Brands</div>
+            <div class="flex">
+                <ul
+                    class="flex flex-row items-center justify-between align-middle mt-5  grid grid-cols-4 items-center justify-items-center md:justify-between w-full gap-6 md:flex md:gap-0">
+
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 122.88 81.77" style="enable-background:new 0 0 122.88 81.77"
+                            xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M122.28,66.44h-5.36c-0.17-0.89-0.43-1.52-0.78-1.87c-0.57-0.57-1.55-0.87-2.9-0.87c-1.33,0-2.25,0.22-2.77,0.67 c-0.39,0.33-0.59,0.79-0.59,1.37c0,0.81,1.13,1.46,3.37,1.96c2.55,0.55,4.38,1.04,5.51,1.42c0.3,0.11,0.55,0.2,0.74,0.3 c2.14,1.01,3.26,2.51,3.39,4.5v0.86c-0.13,2.42-1.23,4.21-3.3,5.35c-0.28,0.15-0.54,0.28-0.83,0.41c-1.42,0.61-3.09,0.92-4.95,0.92 c-2.79,0-5.05-0.5-6.77-1.48c-1.08-0.63-1.89-1.42-2.43-2.37c-0.54-0.95-0.81-2.06-0.81-3.34h5.62c0,0.96,0.35,1.72,1.04,2.24 c0.69,0.54,1.85,0.82,3.49,0.82c1.24,0,2.16-0.26,2.77-0.78c0.48-0.41,0.7-0.85,0.7-1.37c0-0.87-1.11-1.55-3.31-2.03 c-3.29-0.7-5.36-1.28-6.21-1.68c-2.25-1.05-3.36-2.68-3.36-4.94c0-1.81,0.57-3.35,1.76-4.6c1.48-1.57,3.7-2.35,6.64-2.35 c2.42,0,4.36,0.35,5.82,1.04c0.13,0.05,0.24,0.11,0.35,0.19c1.05,0.57,1.85,1.33,2.38,2.28C122.01,64,122.28,65.13,122.28,66.44 L122.28,66.44z" />
+                                <path
+                                    d="M119.86,52.79c0.11,0.15,0.17,0.31,0.17,0.5c0,0.26-0.09,0.48-0.28,0.67c-0.18,0.19-0.42,0.3-0.72,0.32 c0.13,0.05,0.22,0.11,0.29,0.18l0.52,0.69l0.41,0.68h-0.67l-0.31-0.55c-0.2-0.35-0.37-0.61-0.52-0.74 c-0.02-0.02-0.04-0.04-0.07-0.06l-0.44-0.13h-0.33v1.48h-0.56v-3.48h1.2c0.08,0,0.15,0.02,0.2,0.02c0.3,0,0.52,0.04,0.67,0.09 C119.6,52.51,119.75,52.62,119.86,52.79L119.86,52.79z M119.42,53.35c0-0.11-0.02-0.2-0.07-0.28c-0.05-0.09-0.13-0.15-0.24-0.18 c-0.07-0.02-0.19-0.04-0.35-0.06h-0.85v1.04h0.68c0.05,0,0.13,0,0.17,0c0.24-0.02,0.41-0.06,0.5-0.15 C119.36,53.62,119.42,53.49,119.42,53.35L119.42,53.35z" />
+                                <path
+                                    d="M121.97,54.05c0,0.54-0.13,1.07-0.43,1.59c-0.28,0.52-0.67,0.91-1.18,1.18c-0.52,0.3-1.04,0.43-1.59,0.43 c-0.02,0-0.02,0-0.02,0c-0.55,0-1.07-0.13-1.59-0.43c-0.52-0.28-0.91-0.67-1.18-1.18c-0.3-0.52-0.42-1.05-0.42-1.59 c0-0.57,0.13-1.11,0.42-1.63c0.3-0.52,0.69-0.9,1.2-1.18c0.52-0.28,1.04-0.41,1.57-0.42c0,0,0,0,0.02,0c0.54,0,1.06,0.15,1.57,0.42 c0.52,0.28,0.93,0.67,1.2,1.18C121.84,52.94,121.97,53.48,121.97,54.05L121.97,54.05z M121.43,54.05c0-0.48-0.11-0.92-0.35-1.35 c-0.24-0.43-0.57-0.76-1-1c-0.42-0.22-0.87-0.35-1.31-0.35c-0.02,0-0.02,0-0.02,0c-0.44,0-0.89,0.13-1.31,0.35 c-0.43,0.24-0.76,0.57-1,1c-0.24,0.43-0.37,0.87-0.37,1.35c0,0.46,0.13,0.9,0.37,1.33c0.22,0.41,0.56,0.74,0.98,0.98 c0.43,0.24,0.87,0.35,1.33,0.35c0,0,0,0,0.02,0c0.46,0,0.91-0.11,1.33-0.35c0.42-0.24,0.76-0.57,0.98-0.98 C121.32,54.95,121.43,54.51,121.43,54.05L121.43,54.05z" />
+                                <polygon
+                                    points="90.51,27.92 105.7,53.22 81.31,53.22 66.81,29.05 55.83,10.76 66.81,4.16 73.72,0 90.51,27.92" />
+                                <path
+                                    d="M96.49,71.93v-2.29c-0.54-2.77-3-4.88-5.92-4.88c-0.02,0-0.04,0-0.06,0c-3.31,0.02-5.99,2.72-5.99,6.03 c0,3.31,2.68,6.01,5.99,6.05c0.02,0,0.04,0,0.06,0C93.49,76.83,95.95,74.7,96.49,71.93L96.49,71.93z M101.54,70.78v10.37h-5.05 v-1.15c-1.7,1.11-3.74,1.76-5.92,1.76c-0.02,0-0.04,0-0.06,0c-6.03-0.04-10.93-4.96-10.93-10.99s4.9-10.95,10.93-10.98 c0.02,0,0.04,0,0.06,0c2.18,0,4.22,0.65,5.92,1.76v-1.2h5.05V70.78L101.54,70.78z" />
+                                <path
+                                    d="M72.78,71.93v-2.29c-0.54-2.77-3-4.88-5.92-4.88c-0.02,0-0.04,0-0.05,0c-3.31,0.02-5.99,2.72-5.99,6.03 c0,3.31,2.68,6.01,5.99,6.05c0.02,0,0.04,0,0.05,0C69.78,76.83,72.25,74.7,72.78,71.93L72.78,71.93z M77.83,70.78v10.37h-5.05 v-1.15c-1.72,1.11-3.74,1.76-5.92,1.76c-0.02,0-0.04,0-0.05,0c-6.03-0.04-10.93-4.96-10.93-10.99s4.9-10.95,10.93-10.98 c0.02,0,0.04,0,0.05,0c2.18,0,4.2,0.65,5.92,1.76v-8.34h5.05V70.78L77.83,70.78z" />
+                                <polygon
+                                    points="66.81,43.27 72.76,53.22 48.39,53.22 34.86,30.7 34.27,29.71 34.86,29.36 52.18,18.93 66.81,43.27" />
+                                <polygon points="48.41,81.16 53.9,81.16 53.9,59.8 48.41,59.8 48.41,81.16" />
+                                <polygon points="48.41,58.15 53.9,58.15 53.9,53.33 48.41,53.33 48.41,58.15" />
+                                <path
+                                    d="M40.85,71.93v-2.29c-0.54-2.77-3-4.88-5.94-4.88c-0.02,0-0.04,0-0.06,0c-3.31,0.02-5.99,2.72-5.99,6.03 c0,3.31,2.68,6.01,5.99,6.05c0.02,0,0.04,0,0.06,0C37.85,76.83,40.31,74.7,40.85,71.93L40.85,71.93z M45.89,70.78v10.37h-5.05 v-1.15c-1.72,1.11-3.75,1.76-5.94,1.76c-0.02,0-0.04,0-0.06,0c-6.03-0.04-10.93-4.96-10.93-10.99s4.9-10.95,10.93-10.98 c0.02,0,0.04,0,0.06,0c2.18,0,4.22,0.65,5.94,1.76v-8.34h5.05V70.78L45.89,70.78z" />
+                                <polygon
+                                    points="34.86,44.9 39.85,53.22 15.46,53.22 12.72,48.65 30.64,37.89 34.86,44.9" />
+                                <path
+                                    d="M16.9,71.93v-2.29c-0.54-2.77-3-4.88-5.94-4.88c-0.02,0-0.04,0-0.06,0c-3.29,0.02-5.97,2.72-5.97,6.03 c0,3.31,2.68,6.01,5.97,6.05c0.02,0,0.04,0,0.06,0C13.91,76.83,16.37,74.7,16.9,71.93L16.9,71.93z M21.95,70.78v10.37H16.9v-1.15 c-1.72,1.11-3.76,1.76-5.94,1.76c-0.02,0-0.04,0-0.06,0C4.9,81.73,0,76.81,0,70.78S4.9,59.84,10.91,59.8c0.02,0,0.04,0,0.06,0 c2.18,0,4.21,0.65,5.94,1.76v-1.2h5.05V70.78L21.95,70.78z" />
+                            </g>
+                        </svg>
+
+                        <span class="mt-2 font-medium">Adidas</span>
+                    </li>
+
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <svg id="logo" viewBox="35.433 30.331 889.299 446.538" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m512.857 36.99c-2.898.447-5.684 11.118-11.285 16.677-4.096 4.012-9.209 3.761-11.925 8.721-1.031 1.853-.697 5.016-1.867 8.053-2.285 6.074-10.337 6.617-10.337 13.235-.028 7.147 6.715 8.512 12.552 13.583 4.556 4.082 5.002 6.896 10.518 8.874 4.71 1.603 11.717-3.636 18.028-1.755 5.183 1.547 10.142 2.661 11.313 7.983 1.03 4.904-.07 12.51-6.353 11.633-2.118-.237-11.299-3.33-22.583-2.132-13.612 1.547-29.146 5.99-30.664 21.163-.836 8.484 9.654 18.487 19.783 16.453 7.007-1.38 3.692-9.64 7.509-13.653 5.001-5.14 33.338 17.944 59.683 17.944 11.09 0 19.337-2.8 27.53-11.382.765-.655 1.699-2.062 2.883-2.146 1.115.084 3.065 1.184 3.706 1.658 21.218 17.052 37.253 51.255 115.229 51.659 10.964.055 23.46 5.294 33.658 14.6 9.098 8.415 14.42 21.496 19.588 34.773 7.802 19.923 21.79 39.302 42.993 60.868 1.157 1.156 18.613 14.726 20.006 15.743.223.139 1.505 3.204 1.06 4.917-.516 12.929-2.397 50.53 25.633 52.23 6.855.348 5.057-4.472 5.057-7.788-.013-6.548-1.212-13.054 2.244-19.755 4.722-9.222-10.017-13.472-9.585-33.408.306-14.865-12.177-12.33-18.516-23.656-3.65-6.562-6.896-10.044-6.659-18.07 1.421-45.165-9.613-74.84-15.116-82.126-4.29-5.503-7.843-7.69-3.915-10.24 23.392-15.45 28.7-29.828 28.7-29.828 12.44-29.242 23.628-55.95 39.05-67.707 3.107-2.425 11.076-8.373 15.966-10.714 14.391-6.785 21.97-10.894 26.15-14.963 6.617-6.45 11.841-19.894 5.502-28.044-7.885-10.059-21.524-2.076-27.542 1.49-43.007 25.524-49.346 70.55-64.24 96.408-11.883 20.66-31.206 35.832-48.481 37.072-12.957.961-26.916-1.658-40.82-7.76-33.812-14.823-52.314-33.965-56.674-37.35-9.084-7.008-79.606-76.235-136.74-79.063 0 0-7.09-14.196-8.874-14.433-4.18-.53-8.456 8.484-11.521 9.53-2.884.96-7.732-9.767-10.644-9.293m-251.522 413.171c-5.378-.126-9.947-4.542-9.947-10.003l.014-178.214h-58.736v196.45c0 9.627 7.801 17.485 17.372 17.485h102.663c9.64 0 17.345-7.858 17.345-17.485v-196.45h-58.68l-.056 178.214c0 5.461-4.57 9.877-9.975 10.003m196.659-188.217h-88.898c-10.518 0-19.086 8.554-19.086 19.184v194.75h58.79v-178.644c.042-5.475 4.472-9.808 9.934-9.808 5.489 0 9.891 4.235 10.016 9.655v178.798h58.555v-178.8c.07-5.419 4.472-9.654 9.947-9.654 5.434 0 9.92 4.333 9.962 9.808v178.646h58.791v-194.751c0-10.63-8.582-19.184-19.1-19.184zm-343.931 35.665c.042-5.949-4.806-10.184-9.947-10.184h-9.975v108.207h9.975c5.183 0 9.99-4.124 9.947-10.044zm39.413 124.507h-59.335v53.763h-58.708v-213.935h118.42c10.601 0 18.876 8.61 18.876 19.268v121.637c0 10.672-8.595 19.267-19.253 19.267m613.996 5.921c-11.8 0-21.706 10.198-21.706 22.556 0 12.399 9.906 22.513 22.082 22.513 12.079 0 21.859-10.114 21.859-22.513 0-12.386-9.78-22.556-21.86-22.556zm26.442 22.486c0 14.53-11.647 26.345-26.066 26.345-14.573 0-26.275-11.73-26.275-26.345 0-14.336 11.702-26.317 25.843-26.317 14.851 0 26.498 11.62 26.498 26.317" />
+                            <path
+                                d="m765.131 448.852c4.082 0 6.228-1.449 6.228-4.346 0-2.578-2.076-3.901-6.047-3.901h-1.17v8.247zm15.033 16.913h-7.008l-9.014-11.995v11.995h-5.726v-30.329h6.019c8.178 0 12.524 3.093 12.524 9 0 3.942-2.563 7.44-6.144 8.484l-.418.154zm-115.591-70.09v-98.51c-.14-5.448-4.528-9.627-10.003-9.627-5.42 0-9.906 4.346-9.947 9.78v98.357zm0 80.205v-53.707h-19.95v53.707h-58.68v-194.751c0-10.63 8.567-19.184 19.086-19.184h99.137c10.547 0 19.115 8.554 19.115 19.184v194.75z" />
+                        </svg>
+
+                        <span class="mt-2 font-medium">Puma</span>
+                    </li>
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <?xml version="1.0" encoding="utf-8"?><svg id="logo" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 122.88 64.2" style="enable-background:new 0 0 122.88 64.2"
+                            xml:space="preserve">
+                            <style type="text/css">
+                                <![CDATA[
+                                .st0 {
+                                    fill-rule: evenodd;
+                                    clip-rule: evenodd;
+                                }
+                                ]]>
+                            </style>
+                            <g>
+                                <path class="st0"
+                                    d="M20.6,39.3c-0.98,0-1.74,0.68-1.74,1.68s0.77,1.68,1.74,1.68c0.97,0,1.74-0.68,1.74-1.68 C22.34,39.98,21.57,39.3,20.6,39.3L20.6,39.3z M100.06,1.8c0.24-0.01,0.44-0.14,0.44-0.48c0-0.44-0.29-0.55-0.76-0.55h-0.68v1.81 h0.46V1.82h0.08L100,2.58h0.53L100.06,1.8L100.06,1.8z M99.77,1.51h-0.26V1.09h0.22c0.13,0,0.29,0.02,0.29,0.19 C100.02,1.47,99.93,1.51,99.77,1.51L99.77,1.51L99.77,1.51z M94.57,5.66l2.12-5.55H72.66l-8.25,10l3.81-10h-7.98l-12.4,33.32h7.88 l5.29-13.93l0.36,13.93l11.33-0.02c-21.47,5.82-41.82,11.33-41.82,11.33c-11.51,3.23-24.64-3.81-15.15-22.79 C4.74,34.86-5.65,52.06,3.52,59.97c8.89,7.67,19.99,3.13,27.56,0.1c7.57-3.03,91.27-39.38,91.27-39.38 c0.81-0.4,0.66-0.91-0.35-0.66c-0.17,0.04-16.39,4.44-35.1,9.5l0.93-2.59h-9.19l3.02-8.08h7.57l2.33-6.21H84l2.6-7.02H94.57 L94.57,5.66z M69.19,31.2l-0.5-17.37L80.59,0.76L69.19,31.2L69.19,31.2z M20.89,41.1c0.24-0.01,0.44-0.14,0.44-0.48 c0-0.44-0.29-0.54-0.76-0.54h-0.68v1.81h0.46v-0.77h0.08l0.42,0.77h0.52L20.89,41.1L20.89,41.1z M20.6,40.81h-0.26v-0.42h0.22 c0.13,0,0.29,0.02,0.29,0.19C20.85,40.77,20.76,40.81,20.6,40.81L20.6,40.81z M99.76,0c-0.98,0-1.74,0.68-1.74,1.68 s0.77,1.68,1.74,1.68c0.97,0,1.74-0.68,1.74-1.68C101.51,0.68,100.74,0,99.76,0L99.76,0z M99.76,2.88c-0.7,0-1.21-0.51-1.21-1.2 c0-0.69,0.51-1.2,1.21-1.2c0.69,0,1.21,0.52,1.21,1.2C100.98,2.36,100.45,2.88,99.76,2.88L99.76,2.88z M20.6,42.18 c-0.7,0-1.21-0.51-1.21-1.2s0.51-1.2,1.21-1.2c0.69,0,1.21,0.52,1.21,1.2C21.81,41.66,21.28,42.18,20.6,42.18L20.6,42.18z M37.55,33.42h-8.48l0.96-14.74l-5.51,14.74h-7.88L29.15,0.1h8.38l-0.97,14.94L42.17,0.1h7.88L37.55,33.42L37.55,33.42z M38.57,33.42L51.07,0.1h7.88l-12.5,33.32H38.57L38.57,33.42z" />
+                            </g>
+                        </svg>
+                        <span class="mt-2 font-medium">Nike</span>
+                    </li>
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="gucci">
+                            <path
+                                d="M15.826 20a8.317 8.317 0 0 1-2.728-.456 7.913 7.913 0 0 1-1.635-.792 8.073 8.073 0 0 1-1.627-1.327 7.726 7.726 0 0 1-2.012-3.828 1 1 0 0 1 .982-1.197h1.76a1 1 0 1 1 0 2h-.396a5.81 5.81 0 0 0 1.116 1.648c.361.385.776.722 1.241 1.011.391.248.801.447 1.228.596.662.228 1.36.345 2.071.345C19.23 18 22 15.309 22 12s-2.77-6-6.174-6a6.192 6.192 0 0 0-3.294.938 5.88 5.88 0 0 0-2.516 3.061 1 1 0 0 1-1.886-.665 7.874 7.874 0 0 1 3.353-4.098A8.17 8.17 0 0 1 15.826 4C20.333 4 24 7.589 24 12s-3.667 8-8.174 8z">
+                            </path>
+                            <path
+                                d="M8.174 20C3.667 20 0 16.411 0 12s3.667-8 8.174-8c1.554 0 3.061.431 4.358 1.245a7.862 7.862 0 0 1 3.338 4.089 1 1 0 0 1-1.886.665 5.867 5.867 0 0 0-2.501-3.052A6.21 6.21 0 0 0 8.174 6C4.77 6 2 8.691 2 12s2.77 6 6.174 6c.711 0 1.409-.117 2.075-.347a5.95 5.95 0 0 0 1.215-.589 6.115 6.115 0 0 0 1.242-1.007 5.842 5.842 0 0 0 1.123-1.657h-.395a1 1 0 1 1 0-2h1.76a1 1 0 0 1 .98 1.198 7.733 7.733 0 0 1-2.02 3.837 8.067 8.067 0 0 1-1.628 1.323 7.916 7.916 0 0 1-1.622.785 8.321 8.321 0 0 1-2.73.457z">
+                            </path>
+                        </svg>
+                        <span class="mt-2 font-medium">Gucci</span>
+                    </li>
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="zara">
+                            <path
+                                d="M8.562 7l.002.006 2.794 7.621v-7.23h-1.15v-.07h3.96c1.903 0 3.231.976 3.231 2.375 0 1.02-.91 1.868-2.263 2.109l-.249.031.25.026c.821.094 1.473.346 1.935.75l.003.003L19.141 7h.07l.002.006 3.556 9.698H24v.07h-3.918v-.07h1.154l-1.17-3.189h-2.373v.002l.013.037c.094.281.142.576.139.873v1.196c0 .615.271 1.238.79 1.238.304 0 .547-.107.837-.372l.041.038c-.314.332-.695.473-1.266.473-.43 0-.8-.104-1.096-.308l-.056-.04c-.39-.296-.644-.778-.753-1.435l-.018-.106-.018-.16-.002-.028-.654 1.78h.928v.07h-1.942v-.07h.938l.718-1.954v-.005a6.35 6.35 0 01-.013-.346v-.854c0-1.049-.78-1.65-2.14-1.65h-1.337v4.81h1.158v.07H9.433v-.07h1.154l-1.17-3.189H6.172l-1.158 3.154.048-.008c1.521-.262 2.22-1.423 2.23-2.645h.07v2.758H0l5.465-9.377H3.268c-1.822 0-2.646 1.407-2.659 2.81H.54v-2.88h6.634l-.04.07-5.425 9.307h2.854c.071 0 .141-.003.212-.009l.072-.006.09-.01L8.491 7h.07zm9.883 2.095l-1.313 3.576.007.007.067.066c.193.197.347.43.452.684l.007.017h2.375l-1.595-4.35zm-10.648 0l-1.599 4.35h3.194l-1.595-4.35zm6.026-1.698h-1.02v4.427h1.336c1.353 0 1.767-.493 1.767-2.107 0-1.517-.72-2.32-2.083-2.32z">
+                            </path>
+                        </svg>
+                        <span class="mt-2 font-medium">Zara</span>
+                    </li>
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="dior">
+                            <path
+                                d="M.0728 8.7751h3.1157c2.6789 0 3.7272 1.5724 3.7272 3.237 0 1.6937-1.3443 3.203-3.9019 3.203H.0776c-.0534 0-.0728-.034-.0728-.0631 0-.034.034-.0631.0825-.0631h.5484c.1699 0 .2815-.1019.2815-.2912V9.2022c0-.1407-.0679-.296-.2912-.296H.0679C.0243 8.9062 0 8.8771 0 8.8431c0-.0291.0097-.068.0728-.068m1.9461 6.1392c0 .1407.0631.1844.1553.1844h.825c2.0334 0 2.7711-1.5578 2.7711-3.1205S4.9889 8.9013 3.271 8.9013H2.1499c-.1165 0-.1262.0971-.1262.1407l-.0048 5.8723zm5.2073-6.1392c-.0485 0-.0922.0194-.0922.0582s.0243.0631.0679.0631h.5484c.1262 0 .2475.0874.2475.33v5.5762c0 .1165-.0874.2912-.2427.2912h-.5434c-.0631 0-.0679.0485-.0679.0679s-.0049.0534.0679.0534h2.6401c.0388 0 .0922-.0049.0922-.0437s-.0097-.0776-.0776-.0776h-.5097c-.0728 0-.2718-.0437-.2718-.2669V9.1682c0-.1602.1019-.2669.2863-.2669h.4999c.0437 0 .0679-.0243.0679-.0582 0-.034-.0243-.0631-.0825-.0631-.0005-.0048-2.6396.0092-2.6303-.0049zm4.1251 3.2225c0-1.7811.7959-3.2224 2.2906-3.2224 1.4656 0 2.2906 1.4414 2.2906 3.2224S15.1804 15.22 13.642 15.22c-1.4899.0049-2.2907-1.4414-2.2907-3.2224m2.2907 3.3583c2.1256 0 3.4651-1.5044 3.4651-3.3535s-1.3249-3.3583-3.4651-3.3583c-2.1353 0-3.4651 1.5044-3.4651 3.3535s1.3831 3.3583 3.4651 3.3583m10.2593-.1796c-.8347.0874-1.2958-1.2812-1.718-1.9315-.3154-.4805-.9852-.9706-1.6452-1.0677 1.0871-.0631 2.3052-.4125 2.3052-1.6452 0-.9997-.6163-1.7568-2.8779-1.7568h-2.6061c-.034 0-.0679.0194-.0679.0582s.034.0631.0679.0631h.5969c.1262 0 .2475.0874.2475.33v5.5762c0 .1165-.0874.2912-.2427.2912h-.587c-.0485 0-.0679.0388-.0679.0582s.0194.0631.0679.0631h2.7662c.0388 0 .0728-.0194.0728-.0582s-.0243-.0631-.0776-.0631h-.5581c-.0728 0-.2718-.0485-.2718-.2669v-2.6352h.2863c1.3686 0 1.4705 1.485 2.1499 2.3343.5824.728 1.3443.8202 1.7762.8202.1844 0 .3106-.0049.4271-.034.0728-.0243.0874-.1504-.0437-.1359m-4.3192-6.2798h.4028c.6891 0 1.8053.2718 1.8053 1.5724 0 1.1939-.99 1.5967-1.9073 1.5967h-.5872V9.1682c.0001-.165.102-.2717.2864-.2717">
+                            </path>
+                        </svg>
+                        <span class="mt-2 font-medium">Dior</span>
+                    </li>
+                    <li id="logo-name" class=" text-lg flex flex-col items-center">
+                        <svg id="logo" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 40 40"
+                            viewBox="0 0 40 40" id="chanel">
+                            <switch>
+                                <g>
+                                    <path d="M26,28c-0.9,0-1.8-0.2-2.7-0.5C25,25.5,26,22.9,26,20s-1-5.5-2.7-7.5c0.8-0.3,1.7-0.5,2.7-0.5
+			c3.1,0,5.7,1.7,7.1,4.3l2.9-2.9C33.8,10.1,30.2,8,26,8c-2.2,0-4.2,0.6-6,1.6c-1.8-1-3.8-1.6-6-1.6c-4.2,0-7.8,2.1-10,5.4l2.9,2.9
+			c1.3-2.5,4-4.3,7.1-4.3c0.9,0,1.8,0.2,2.7,0.5C15,14.5,14,17.1,14,20s1,5.5,2.7,7.5C15.8,27.8,14.9,28,14,28
+			c-3.1,0-5.7-1.7-7.1-4.3L4,26.6C6.2,29.9,9.8,32,14,32c2.2,0,4.2-0.6,6-1.6c1.8,1,3.8,1.6,6,1.6c4.2,0,7.8-2.1,10-5.4l-2.9-2.9
+			C31.7,26.3,29.1,28,26,28z M20,25.3c-1.2-1.4-2-3.3-2-5.3s0.8-3.9,2-5.3c1.2,1.4,2,3.3,2,5.3S21.2,23.9,20,25.3z">
+                                    </path>
+                                </g>
+                            </switch>
+                        </svg>
+                        <span class="mt-2 font-medium">Chanel</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Customer Experience -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-5 mt-7">
+
+            <!-- Left Side -->
+            <div class="md:w-1/2">
+                <h1 class="font-bold text-2xl md:text-4xl">
+                    We Provide Best Customer Experiences
+                </h1>
+            </div>
+
+            <!-- Right Side -->
+            <div class="md:w-1/2">
+                <p class="md:text-lg border-l-2 border-black pl-3 md:text-right">
+                    We ensure that our customers have the best shopping experience
+                </p>
+            </div>
+
+        </div>
+        <!--container-->
+        <div class="md:flex  gap-5 mt-10 justify-between   items-center">
+            <div class="bg-slate-100 flex-1  p-3 mb-2 mt-2">
+                <i class="fa-regular fa-circle-check text-3xl"></i>
+                <h1 class="font-bold">Original Products</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptas consequatur corporis?</p>
+            </div>
+            <div class="bg-slate-100 flex-1   p-3 mb-2 mt-2">
+                <i class="fa-regular fa-face-smile text-3xl"></i>
+                <h1 class="font-bold">Satisfaction Quarantee</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptas consequatur corporis?</p>
+            </div>
+            <div class="bg-slate-100 flex-1  p-3 mb-2 mt-2">
+                <i class="fa-solid fa-broom text-3xl"></i>
+                <h1 class="font-bold">New Arrival Everyday</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptas consequatur corporis?</p>
+            </div>
+            <div class="bg-slate-100 flex-1   p-3 mb-2 mt-2">
+                <i class="fa-solid fa-truck-fast text-3xl"></i>
+                <h1 class="font-bold">Fast&Free Shipping</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptas consequatur corporis?</p>
+            </div>
+        </div>
+        <!--new arrivals-->
+        <div id="new-arrivals" class="mb-10 scroll-mt-20">
+            <h1 class="text-2xl font-bold mb-5">New Arrivals</h1>
+            <div class="grid grid-cols-2 1md:grid-cols-4 gap-6 lg:grid-cols-4">
+                <!--card1-->
+                <div class="relative h-52 rounded-lg overflow-hidden md:h-80 ">
+                    <img src="images/image5.jpg" class="w-full h-full object-cover" alt="">
+                    <!--overlay-->
+                    <div class="absolute inset-0  bg-black/40"></div>
+                    <!--button-->
+                    <button
+                        class="absolute z-10 top-1/2   left-6 translate-y-1/2 bg-white px-5 py-2 rounded-md flex items-center gap-2 hover:bg-slate-100 md:left-24">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+                </div>
+
+
+                <!--card2-->
+                <div class="relative h-52 rounded-lg overflow-hidden  md:h-80">
+                    <img src="images/image6.jpg" class="w-full h-full object-cover" alt="">
+                    <!--overlay-->
+                    <div class="absolute inset-0  bg-black/40"></div>
+                    <!--button-->
+                    <button
+                        class="absolute z-10 top-1/2   left-6 translate-y-1/2 bg-white px-5 py-2 rounded-md flex items-center gap-2 hover:bg-slate-100 md:left-24">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+                </div>
+                <!--card3-->
+                <div class="relative h-52 rounded-lg overflow-hidden md:h-80">
+                    <img src="images/image7.jpg" class="w-full h-full object-cover  " alt="">
+                    <!--overlay-->
+                    <div class="absolute inset-0  bg-black/40"></div>
+                    <!--button-->
+                    <button
+                        class="absolute z-10 top-1/2   left-6 translate-y-1/2 bg-white px-5 py-2 rounded-md flex items-center gap-2 hover:bg-slate-100 md:left-24">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+                </div>
+                <!--card4-->
+                <div class="relative h-52 rounded-lg overflow-hidden md:h-80">
+                    <img src="images/image8.jpg" class="w-full h-full object-cover " alt="">
+                    <!--overlay-->
+                    <div class="absolute inset-0  bg-black/40"></div>
+                    <!--button-->
+                    <button
+                        class="absolute z-10 top-1/2   left-6 translate-y-1/2 bg-white px-5 py-2 rounded-md flex items-center gap-2 hover:bg-slate-100 md:left-24">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+                </div>
+            </div>
+            <!--most wanted-->
+            <div id="most-wanted" class="scroll-mt-24">
+                <h1 class="text-2xl font-bold mt-10 mb-5">Most Wanted</h1>
+                <div class="flex overflow-x-auto gap-5 pb-4 scrollbar-hide">
+                    
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image9.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image10.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image11.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image12.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image13.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image14.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                       <div class="relative  h-52 rounded-lg overflow-hidden flex-shrink-0 md:h-80 ">
+
+                        <!--card1-->
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded">
+                            Sale
+                        </span>
+                        <img src="images/image15.jpg" alt="" class="w-full h-full object-cover">
+                        <i class="fa-regular fa-heart absolute bottom-3 right-3 text-3xl"></i>
+                    </div>
+
+                </div>
+            </div>
+            <!--offer-->
+            <div class="bg-black md:flex gap-5 p-5 mt-10">
+                <div class="w-56md:w-96 md:px  ">
+                    <img src="images/image16.jpg" alt="">
+                </div>
+                <div class="text-white text-center  mt-6 font-bold  md:translate-y-10 md:ml-20 lg:translate-y-24">
+                    <h1 class="md:text-3xl lg:text-4xl">Limited Offer</h1>
+                    <p class="md:text-2xl mt-2  lg:text-4xl">35% OFF on the first 30 customers</p>
+                    <button class=" bg-white px-5 py-2 mx-auto   rounded-md mt-3 flex items-center gap-2 text-black hover:bg-gray-100">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!--news letter-->
+            <div class="text-center mt-10">
+                <h1 class="font-bold text-2xl md:text-3xl lg:4xl">Join Our News Letter</h1>
+                <p class="text-xl mt-3 md:text-2xl lg:3xl">Signup for our email newspaper to get exclusive discounts,updates,and more</p>
+                <textarea class="w-96 h-10 border border-black rounded-md p-3 mt-3 md:w-full lg:w-7/12" name="" id=""></textarea>
+                <button class=" bg-blue-950 px-5 py-2 mx-auto   rounded-md mt-3 flex items-center gap-2 text-white hover:bg-gray-100 md:text-lg">
+                    Subscribe
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            </div>
+    </div>
+            <!--footer-->
+            <div class="bg-black  text-white mt-10 p-5">
+                <div>
+                    <h1 class="font-bold text-xl md:text-2xl lg:text:3xl">Nostra</h1>
+                    <p class="mt-3 text-l md:text-xl lg:text:2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium eveniet, facere rem magnam fugit?</p>
+                </div>
+                <div class="flex gap-10 mt-3 ">
+                    <i class="fa-brands fa-instagram text-l md:text-2xl" ></i>
+                    <i class="fa-brands fa-twitter text-l md:text-2xl"></i>
+                    <i class="fa-brands fa-facebook text-l md:text-2xl"></i>
+
+
+                </div>
+                <div class="mt-3">
+                    <p>@2023 Nostra.com</p>
+                </div>
+            </div>
+
+
+
+            <script src="nostra.js"></script>
+</body>
+
+</html>

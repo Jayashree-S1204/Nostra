@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="nostra.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--desktop menu-->
+    <div  class="flex justify-between items-center bg-white w-full h-20 px-10 sticky top-0 z-50 ">
+        <div class="text-black font-bold text-xl md:text-4xl font-bold text-black">Nostra</div>
+        <ul class="flex flex-row pl-0 m-0 text-gray-500 hidden md:flex">
+            <li> <a href="index.html" class="ml-5 hover hover:text-black">Home</a></li>
+            <li><a href="index.html#new-arrivals" class="ml-5 hover hover:text-black">New Arrival</a></li>
+            <li><a href="index.html#most-wanted" class="ml-5 hover hover:text-black">Most Wanted</a></li>
+            <li><a href="collections.html" class="ml-5 hover hover:text-black">Collections</a></li>
+            <li><a href="contact.html" class="ml-5 hover hover:text-black">Contact Us</a></li>
+        </ul>
+        <!-- Menu Icon -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="w-6 h-6 block md:hidden">
+            <path fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+    <!--side navbar-->
+
+    <section id="sidenav" class="bg-white fixed z-50 top-0 transition-all duration-1000 "
+        style="width:50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <ul class="flex flex-col gap-10 pl-0 m-0 text-gray-500  md:flex text-lg ">
+            <li> <a href="index.html" class="ml-5 hover hover:text-black">Home</a></li>
+            <li><a href="index.html#new-arrivals" class="ml-5 hover hover:text-black">New Arrival</a></li>
+            <li><a href="index.html#most-wanted" class="ml-5 hover hover:text-black">Most Wanted</a></li>
+            <li><a href="collections.html" class="ml-5 hover hover:text-black">Collections</a></li>
+            <li><a href="contact.html" class="ml-5 hover hover:text-black">Contact Us</a></li>
+        </ul>
+        </section>
+        <!--choices-->
+<div class="flex justify-between p-10 md:">
+    <div class="">
+            <section>
+            <div class="sidebar mb-5">
+                <div class="filter-group mt-5 ">
+                    <div>
+                        <h2 class="text-lg font-bold mb-2 md:text-2xl">Occasion</h2>
+                    </div >
+                    <div class="flex flex-col ">
+                        <label for="" class="mb-2 md:text-xl ">
+                        <input type="checkbox" name="occasion" value="Summer">Summer
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="occasion" value="Party">Party
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="occasion" value="Beach">Beach
+                    </label>
+                    </div>
+                </div>
+            </div>
+            <!--color section-->
+            <div class="sidebar">
+                <div class="filter-group ">
+                    <div>
+                        <h2 class="text-lg font-bold mb-2 md:text-2xl">Colors</h2>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Black">Black
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Blue">Blue
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="White">White
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Green">Green
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Pink">Pink
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Sandal">Sandal
+                    </label>
+                    <label for="" class="mb-2  md:text-xl">
+                        <input type="checkbox" name="Colors" value="Maroon">Maroon
+                    </label>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+</div>
+<!--line-->
+<div class="bg-blue-950  h-auto w-1 mr-4 ml-4 lg:mr-16"></div>
+        <!--products-->
+        <div class=" text-center">
+        
+            
+            <input id="search"placeholder="Search for a products" class="border border-black p-2 mt-3 w-full ">
+        
+        <div id="product-container" class="grid grid-cols-2 mt-10 gap-5 h-[500px] overflow-y-auto scrollbar-hide mt-6 pr-2 md:grid-cols-4 lg:gap-14">
+            <div data-occasion="Summer"  data-color="Black">
+                <img  src=".\images\image17.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60 object-cover ">
+                <h1 class="font-bold md:text-xl">Floral Multi</h1>
+                <p >$30</p>
+            </div >  
+            <div data-occasion="Beach"  data-color="Black">
+                <img  src=".\images\image18.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60   object-cover">
+                <h1 class="font-bold md:text-xl">White Rose Shirt</h1>
+                <p>$28</p>
+            </div>
+            <div data-occasion="Summer"  data-color="Black">
+                <img src=".\images\image19.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Floral Black</h1>
+                <p>$27</p>
+            </div>
+            <div data-occasion="Beach"  data-color="Blue">
+                <img  src=".\images\image20.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Bludi Shirt</h1>
+                <p>$20</p>
+            </div>
+            <div data-occasion="Summer"  data-color="Blue">
+                <img  src=".\images\image21.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Formal Violet Shirt</h1>
+                <p>$32</p>
+            </div>
+            <div data-occasion="Party"  data-color="Black">
+                <img  src=".\images\image22.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Designer Black Shirt</h1>
+                <p>$26</p>
+            </div>
+            <div data-occasion="Summer"  data-color="Pink">
+                <img  src=".\images\image23.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Plain Pink Shirt</h1>
+                <p>$35</p>
+            </div>
+            <div data-occasion="Party"  data-color="Green">
+                <img  src=".\images\image24.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Plain Olive Shirt</h1>
+                <p>$45</p>
+            </div>
+            <div data-occasion="Party"  data-color="Black">
+                <img  src=".\images\image25.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60 object-cover">
+                <h1 class="font-bold md:text-xl">Striped Black Shirt</h1>
+                <p>$45</p>
+            </div>
+            <div data-occasion="Summer"  data-color="Maroon">
+                <img  src=".\images\image26.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Formal Maroon Shirt</h1>
+                <p>$45</p>
+            </div>
+            <div data-occasion="Party"  data-color="Blue">
+                <img  src=".\images\image27.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Formal Blue Pant</h1>
+                <p>$45</p>
+            </div>
+            <div data-occasion="Party"  data-color="Sandal">
+                <img  src=".\images\image28.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60   object-cover">
+                <h1 class="font-bold md:text-xl">Formal Sandal Pant</h1>
+                <p>$45</p>
+            </div>
+            <div data-occasion="Beach"  data-color="White">
+                <img  src=".\images\image29.jpg"class="inline hover:shadow-xl transform hover:-translate-y-2 w-full h-60  object-cover">
+                <h1 class="font-bold md:text-xl">Printed Shorts</h1>
+                <p>$45</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <!--footer-->
+            <div class="bg-black  text-white mt-10 p-5">
+                <div>
+                    <h1 class="font-bold text-xl md:text-2xl lg:text:3xl">Nostra</h1>
+                    <p class="mt-3 text-l md:text-xl lg:text:2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium eveniet, facere rem magnam fugit?</p>
+                </div>
+                <div class="flex gap-10 mt-3 ">
+                    <i class="fa-brands fa-instagram text-l md:text-2xl" ></i>
+                    <i class="fa-brands fa-twitter text-l md:text-2xl"></i>
+                    <i class="fa-brands fa-facebook text-l md:text-2xl"></i>
+
+
+                </div>
+                <div class="mt-3">
+                    <p>@2023 Nostra.com</p>
+                </div>
+            </div>
+
+
+
+            <script src="nostra.js"></script>
+    
+</body>
+</html>
